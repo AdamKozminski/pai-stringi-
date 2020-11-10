@@ -8,21 +8,24 @@
 </head>
 <body>
     <script>
+        function hcd(imie){
+            if(imie=="kuba")
+            {
+                alert("jesteś mężczyzną");
+            }
+            else if (imie.endsWith("a"))
+            {
+                alert("jesteś dziewczyną");
+            }
+            else
+            {
+                alert("jesteś mężczyzną");
+            }
+        }
+        
         let imie = prompt('podaj imie');
         imie=imie.toLocaleLowerCase();
-
-        if(imie=="kuba")
-        {
-            alert("jesteś mężczyzną");
-        }
-        else if (imie.endsWith("a"))
-        {
-            alert("jesteś dziewczyną");
-        }
-        else
-        {
-            alert("jesteś mężczyzną");
-        }
+        hcd(imie);
     </script>
 </body>
 </html>
